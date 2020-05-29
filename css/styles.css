@@ -1,0 +1,83 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif; }
+
+.card {
+  background-color: #fafafa;
+  padding: 2rem;
+  width: 330px; }
+  .card__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem; }
+  .card__titulo {
+    font-family: 'Prompt', Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #3b8acf; }
+  .card__separador {
+    background-color: #3b8acf38;
+    width: 20px;
+    height: 5px;
+    align-self: center; }
+  .card__subtitulo {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    top: -10px; }
+  .card__destino .card__titulo {
+    text-align: right; }
+  .card__destino .card__subtitulo {
+    text-align: right; }
+  .card__info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem; }
+  .card__vuelo, .card__gate, .card__seat {
+    flex: 1 0 auto; }
+    .card__vuelo h4, .card__gate h4, .card__seat h4 {
+      font-size: 14px;
+      color: #b3b3b3;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .card__vuelo span, .card__gate span, .card__seat span {
+      font-size: 14px;
+      color: #222222;
+      font-weight: 600;
+      text-transform: uppercase; }
+  .card__subinfo {
+    display: flex;
+    justify-content: space-between; }
+  .card__person, .card__codigo {
+    width: 50%; }
+  .card__person {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between; }
+    .card__person h4 {
+      font-size: 14px;
+      color: #b3b3b3;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .card__person p {
+      font-size: 14px;
+      color: #222222;
+      font-weight: 600; }
+    .card__person div {
+      margin-bottom: 1rem; }
+  .card__qr {
+    width: 100%; }

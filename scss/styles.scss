@@ -1,0 +1,133 @@
+$colorlight: #fafafa;
+$colorDark: #222222;
+$colorSeparador: #b3b3b3;
+$colorPrincipal: #3b8acf;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.card {
+
+    background-color: $colorlight;
+    padding: 2rem;
+    width: 330px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    &__titulo {
+        font-family: 'Prompt', Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: $colorPrincipal;
+    }
+
+    &__separador {
+        background-color: #3b8acf38;
+        width: 20px;
+        height: 5px;
+        align-self: center;
+    }
+
+    &__subtitulo {
+        font-size: 14px;
+        color: $colorSeparador;
+        font-weight: 400;
+        text-transform: uppercase;
+        position: relative;
+        top: -10px;
+    }
+
+    &__destino &__titulo {
+        text-align: right;
+    }
+
+    &__destino &__subtitulo {
+        text-align: right;
+    }
+
+    // body 
+
+    // Informacion primaria de vuelo
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    &__vuelo, &__gate, &__seat {
+        flex: 1 0 auto;
+
+        & h4 {
+            font-size: 14px;
+            color: $colorSeparador;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        & span {
+            font-size: 14px;
+            color: $colorDark;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+
+    // Informacion secundaria de vuelo
+
+    &__subinfo  {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__person, &__codigo {
+        width: 50%;
+    }
+
+    &__person {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+
+        & h4 {
+            font-size: 14px;
+            color: $colorSeparador;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        & p {
+            font-size: 14px;
+            color: $colorDark;
+            font-weight: 600;
+            
+        }
+
+        & div {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__qr {
+        width: 100%;
+    }
+}
